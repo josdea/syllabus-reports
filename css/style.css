@@ -1,0 +1,28 @@
+body{
+  font-size: 13px;
+}
+ol li ol {
+  list-style-type: lower-alpha;
+}
+ol li ol li ol {
+  list-style-type: lower-roman;
+}
+
+h2{
+  display: inline-block;
+  margin-bottom: .2em;
+  padding-right: .4em;
+}
+
+span {
+  font-size: 1.5em;
+}
+
+/* html{
+  -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+} */

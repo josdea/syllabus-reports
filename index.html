@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Syllabus DB Data Printer</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="outcomes" class="container-fluid">
+    <h1>2018-2019 Courses by Department</h1>
+    <hr>
+    <small>Pellissippi State Community College <br>Oct 4, 2018</small>
+  
+  <table class="table table-bordered">
+   <tr>
+     <th v-for="thead in theaders">{{thead}}</th>
+    </tr>
+    <tr v-for="course in courses">
+      <td>{{course.Department}}</td>
+      <td>{{course.Rubric}}</td>
+      <td>{{course.Code}}</td>
+      
+      <td v-html="course.Title"></td>
+      <td v-html="course.Learning_Outcomes"></td>
+    </tr>
+    </table>
+    
+  
+  <!--   <div v-for="course in courses" class="outcomes">
+      <h2 :id="course.COURSEPREFIX + ' - ' + course.COURSECODE">{{course.COURSEPREFIX}}-{{course.COURSECODE}} </h2><span v-html="course.COURSENAME"></span> 
+      
+      <div v-html="course.OUTCOMES"></div>
+    </div> -->
+    
+    
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
